@@ -1,10 +1,31 @@
 <html>
 	<head>
-		<title>Example</title>
-		<link href="css/style.css" rel="stylesheet" media="screen",charset="utf-8">
+		<title>Weather App</title>
+		<meta charset="UTF-8"></meta>
+		<link href="css/style.css" rel="stylesheet"></link>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="//code.jquery.com/ui/1.8.10/themes/smoothness/jquery-ui.css" type="text/css">
+		<script type="text/javascript" src="//ajax.aspnetcdn.com/ajax/jquery.ui/1.8.10/jquery-ui.min.js"></script>
+
 	</head>
 	<body>
-		<h1>Hello World !!</h1>
+		<div class ="weather">
+			<!--<video autoplay muted loop>
+				<source src="bg.mp4" type="video/mp4">
+			</video>-->
+			<h2 id="Name"></h2>
+			<div class="search_box">
+				<input type="text" id="search" placeholder="Search..."/>
+			</div>
+			<div id="location"></div>
+			<div id="date"></div>
+			<h1 id='temp'></h1>
+			<div class="main_temp">
+			<h3 id="temp_max"></h3>
+			<h3 id="temp_min"></h3>
+			</div>
+			<div id="description"></div>
+		</div>
 	</body>
-
+	<script src="app.js"></script>
 </html>
