@@ -1,4 +1,4 @@
-var name = prompt("what is your name?")
+var name = prompt("what is your name?");
 alert("Hello " + name);
 document.getElementById('Name').innerHTML = "Hello "+name+" !!";
 const a1 = document.querySelector('.weather');
@@ -6,7 +6,7 @@ const weatherBall = (cityId) =>{
 	//Calling a Api with url 
 	let apiKey = 'dd4b2c0bf6ced9e46923c2c31cc3b825';
 	//let city = 'pune';
-	let url =  `http://api.openweathermap.org/data/2.5/weather?q=${cityId}&appid=${apiKey}`; 
+	let url =  `https://api.openweathermap.org/data/2.5/weather?q=${cityId}&appid=${apiKey}`; 
 	fetch(url)
 	.then(function(resp){ return resp.json() })
 	.then(function(data){
