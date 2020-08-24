@@ -1,0 +1,27 @@
+<div class="form-row" style="padding:10px;">
+<a class="btn btn-secondary" href="/login" style="margin-right : 5px;"><i class="fa fa-list-alt" style="padding-right:5px;"></i>Create News</a>
+<h3>Hacking News</h3>
+</div>
+<table class="table table-striped">
+	<thead>
+		<tr>
+			<th></th>
+			<th>Author</th>
+			<th style="width:150px;">Header</th>
+			<th style="width:150px;">Subject</th>
+			<th>Content</th>
+
+		</tr>
+	</thead>
+	<tbody>
+		{{#each list}}
+		<tr>
+			<td><a><i class="fa fa-user fa-lg" aria-hidden="true"></i></a></td>
+			<td>{{this.author}}</td>
+			<td>{{this.header}}</td>
+			<td>{{this.subject}}</td>
+			<td>{{this.content}}</td>
+		</tr>
+		{{/each}}
+	</tbody>
+</table>
