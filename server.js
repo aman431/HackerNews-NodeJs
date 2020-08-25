@@ -9,10 +9,12 @@ const bodyParser = require('body-parser');
 const userRoutes = require('./controllers/user');
 const loginRoutes = require('./controllers/login');
 const ListRoutes = require('./controllers/List');
+//const UpdateRoutes = require('./controllers/Update');
+
 
 const app = express();
-
-
+let allow = true;
+let news = false;
 app.use(bodyParser.urlencoded({
 	extended: true
 }));
@@ -35,10 +37,12 @@ app.use('/',ListRoutes);
 app.use('/user',userRoutes);
 app.use('/login',loginRoutes);
 app.use('/News',NewsController);
+//app.use('/Update',UpdateRoutes);
 
 app.listen(3000, () =>{
 	console.log('Express srver started at port : 3000');
 });
+
 
 
 //Explore a differenet thing 
